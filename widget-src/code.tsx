@@ -7,7 +7,8 @@ const ICONS = {
   EYE_ON: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>`,
   EYE_OFF: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/><path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/><path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/><line x1="2" y1="2" x2="22" y2="22"/></svg>`,
   REFRESH: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M3 21v-5h5"/></svg>`,
-  SETTINGS: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.47a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>`
+  SETTINGS: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.47a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>`,
+  EDIT_PAGES: `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>`
 };
 
 // --- 1. Configurations ---
@@ -39,21 +40,18 @@ const STATUS_CONFIG = {
 };
 
 const SAFE_COLOR_PALETTE = [
-  { bg: '#FFF3E0', text: '#EF6C00' }, 
-  { bg: '#FFF8E1', text: '#FF8F00' }, 
-  { bg: '#F9FBE7', text: '#827717' }, 
-  { bg: '#F1F8E9', text: '#33691E' }, 
-  { bg: '#E8F5E9', text: '#1B5E20' }, 
-  { bg: '#E0F2F1', text: '#004D40' }, 
-  { bg: '#E0F7FA', text: '#006064' }, 
+  { bg: '#FFF3E0', text: '#FF383C' }, 
+  { bg: '#FFF8E1', text: '#FF8D28' }, 
+  { bg: '#F9FBE7', text: '#FFCC00' }, 
+  { bg: '#F1F8E9', text: '#34C759' }, 
+  { bg: '#E8F5E9', text: '#00C8B3' }, 
+  { bg: '#E0F2F1', text: '#00C0E8' }, 
+  { bg: '#E0F7FA', text: '#0088FF' }, 
   { bg: '#E1F5FE', text: '#01579B' }, 
-  { bg: '#E3F2FD', text: '#0D47A1' }, 
-  { bg: '#E8EAF6', text: '#1A237E' }, 
-  { bg: '#F3E5F5', text: '#4A148C' }, 
-  { bg: '#EDE7F6', text: '#311B92' }, 
-  { bg: '#FCE4EC', text: '#880E4F' }, 
-  { bg: '#EFEBE9', text: '#3E2723' }, 
-  { bg: '#ECEFF1', text: '#263238' }, 
+  { bg: '#E3F2FD', text: '#6155F5' }, 
+  { bg: '#E8EAF6', text: '#CB30E0' }, 
+  { bg: '#F3E5F5', text: '#FF2D55' }, 
+  { bg: '#EDE7F6', text: '#AC7F5E' }, 
 ];
 
 type ThemeMode = 'LIGHT' | 'DARK';
@@ -128,7 +126,7 @@ function DashboardWidget() {
   const [showStatus, setShowStatus] = useSyncedState<boolean>('showStatus', true);
 
   // --- Management States ---
-  const [activeTab, setActiveTab] = useSyncedState<'MEMBERS' | 'STATUS'>('activeTab', 'MEMBERS');
+  const [activeTab, setActiveTab] = useSyncedState<'MEMBERS' | 'STATUS' | 'PAGES'>('activeTab', 'MEMBERS');
   interface StatusItem { id: string; label: string; color: { light: { bg: string, text: string }, dark: { bg: string, text: string } }; type: StatusType | 'CUSTOM'; }
   const [statusConfig, setStatusConfig] = useSyncedState<StatusItem[]>('statusConfig', []);
 
@@ -148,6 +146,7 @@ function DashboardWidget() {
 
   const [newStatusName, setNewStatusName] = useSyncedState<string>('newStatusName', '');
   const [newStatusColorIdx, setNewStatusColorIdx] = useSyncedState<number>('newStatusColorIdx', 0);
+  const [newPageName, setNewPageName] = useSyncedState<string>('newPageName', '');
 
   const C = THEME_CONFIG[theme];
   const S = SIZE_CONFIG[size];
@@ -393,6 +392,40 @@ function DashboardWidget() {
       setStatusConfig(newConfig);
   };
 
+  // --- Page Management Logic ---
+  const addPage = (nameInput?: string) => {
+      const name = (typeof nameInput === 'string' ? nameInput : newPageName).trim();
+      if (!name) return;
+      
+      const newPage = figma.createPage();
+      newPage.name = name;
+      figma.notify(`📄 페이지 '${name}' 생성됨`);
+      setNewPageName('');
+      syncPages();
+  };
+
+  const addDivider = () => {
+      const newPage = figma.createPage();
+      newPage.name = '----------------';
+      figma.notify(`➖ 구분선 추가됨`);
+      syncPages();
+  };
+
+  const movePage = (pageId: string, direction: 'up' | 'down') => {
+      const pages = figma.root.children;
+      const index = pages.findIndex(p => p.id === pageId);
+      if (index === -1) return;
+
+      const newIndex = direction === 'up' ? index - 1 : index + 1;
+      if (newIndex < 0 || newIndex >= pages.length) return;
+
+      const page = pages[index];
+      // Check if trying to move current widget page? (Optional safety)
+      
+      figma.root.insertChild(newIndex, page);
+      syncPages();
+  };
+
   // --- Property Menu ---
   usePropertyMenu(
     [
@@ -427,6 +460,15 @@ function DashboardWidget() {
         icon: ICONS.REFRESH,
       },
       {
+        itemType: 'separator'
+      },
+      {
+          itemType: 'action',
+          propertyName: 'edit_pages',
+          tooltip: '페이지 편집',
+          icon: ICONS.EDIT_PAGES
+      },
+      {
         itemType: 'action',
         propertyName: 'management',
         tooltip: '관리 패널',
@@ -446,6 +488,10 @@ function DashboardWidget() {
         syncPages();
       } else if (propertyName === 'management') {
         setIsSettingsOpen(true);
+        // setActiveTab('MEMBERS'); // Default to Members? Or keep last open tab
+      } else if (propertyName === 'edit_pages') {
+          setIsSettingsOpen(true);
+          setActiveTab('PAGES');
       }
     },
   );
@@ -476,6 +522,10 @@ function DashboardWidget() {
                 <Rectangle width={1} height={16} fill={C.divider} />
                 <AutoLayout onClick={() => setActiveTab('STATUS')} opacity={activeTab === 'STATUS' ? 1 : 0.4}>
                      <Text fontSize={16} fontWeight={700} fontFamily="Noto Sans KR" fill={C.text}>🏷️ 상태</Text>
+                </AutoLayout>
+                <Rectangle width={1} height={16} fill={C.divider} />
+                <AutoLayout onClick={() => setActiveTab('PAGES')} opacity={activeTab === 'PAGES' ? 1 : 0.4}>
+                     <Text fontSize={16} fontWeight={700} fontFamily="Noto Sans KR" fill={C.text}>📄 페이지</Text>
                 </AutoLayout>
             </AutoLayout>
             
@@ -528,6 +578,62 @@ function DashboardWidget() {
                     ))}
                 </AutoLayout>
             </AutoLayout>
+        ) : activeTab === 'PAGES' ? (
+             <AutoLayout width="fill-parent" spacing={8} direction="vertical">
+                {/* 1. Add Page Form */}
+                <AutoLayout width="fill-parent" spacing={8} verticalAlignItems="center">
+                    <Input
+                        value={newPageName}
+                        placeholder="새 페이지 이름"
+                        onTextEditEnd={(e) => setNewPageName(e.characters)}
+                        width="fill-parent"
+                        fontSize={14}
+                        fontFamily="Noto Sans KR"
+                        inputFrameProps={{ padding: 8, cornerRadius: 6, stroke: C.stroke, fill: theme === 'DARK' ? '#2C2C2C' : '#FAFAFA', color: C.text }} 
+                    />
+                    <AutoLayout onClick={() => addPage()} padding={{ vertical: 8, horizontal: 12 }} cornerRadius={6} fill="#2F80ED" hoverStyle={{ fill: '#2D75D8' }}>
+                        <Text fill="#FFF" fontWeight={700} fontFamily="Noto Sans KR">추가</Text>
+                    </AutoLayout>
+                </AutoLayout>
+                
+                <AutoLayout width="fill-parent" onClick={addDivider} padding={8} cornerRadius={6} fill={C.hover} horizontalAlignItems="center" hoverStyle={{ stroke: C.stroke }}>
+                     <Text fontSize={12} fill={C.secondaryText} fontFamily="Noto Sans KR">+ 구분선 추가</Text>
+                </AutoLayout>
+
+                <Rectangle width="fill-parent" height={1} fill={C.divider} />
+
+                {/* 2. Page List (Mini Sync View) */}
+                <AutoLayout direction="vertical" width="fill-parent" spacing={4} height={300} overflow="scroll">
+                    {items.map((item, idx) => { // Use synced items as proxy for real pages
+                        const isDivider = /^[-\s_—–]+$/.test(item.name) || item.name.includes('---');
+                        return (
+                            <AutoLayout key={item.pageId} width="fill-parent" verticalAlignItems="center" padding={8} cornerRadius={6} fill={C.bg} stroke={C.stroke} spacing="auto">
+                                <AutoLayout spacing={8} verticalAlignItems="center" width="fill-parent">
+                                    {isDivider ? (
+                                        <Rectangle width={100} height={2} fill={C.secondaryText} />
+                                    ) : (
+                                        <Text fontSize={14} fontFamily="Noto Sans KR" fill={C.text} truncate={true} width={160}>{item.name}</Text>
+                                    )}
+                                </AutoLayout>
+                                <AutoLayout spacing={4} verticalAlignItems="center">
+                                    {/* Up Arrow */}
+                                    {idx > 0 && (
+                                        <AutoLayout onClick={() => movePage(item.pageId, 'up')} padding={4} hoverStyle={{ fill: C.hover }} cornerRadius={4}>
+                                            <SVG src={`<svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M18 15L12 9L6 15" stroke="${C.secondaryText}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`} width={12} height={12}/>
+                                        </AutoLayout>
+                                    )}
+                                    {/* Down Arrow */}
+                                    {idx < items.length - 1 && (
+                                        <AutoLayout onClick={() => movePage(item.pageId, 'down')} padding={4} hoverStyle={{ fill: C.hover }} cornerRadius={4}>
+                                            <SVG src={`<svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="${C.secondaryText}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`} width={12} height={12}/>
+                                        </AutoLayout>
+                                    )}
+                                </AutoLayout>
+                            </AutoLayout>
+                        )
+                    })}
+                </AutoLayout>
+             </AutoLayout>
         ) : (
             <AutoLayout width="fill-parent" spacing={8} direction="vertical">
                 {/* 1. Add Status Form */}
